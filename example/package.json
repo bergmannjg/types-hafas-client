@@ -1,0 +1,16 @@
+{
+  "name": "example",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "hafas-client": "^6.3.0"
+  },
+  "devDependencies": {
+    "@types/hafas-client": "^6.2.0",
+    "@types/node": "^20.12.2"
+  }
+}
