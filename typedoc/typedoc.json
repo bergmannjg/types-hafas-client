@@ -1,0 +1,9 @@
+{
+    "$schema": "https://typedoc.org/schema.json",
+    "name": "Hafas-Client - vVERSION",
+    "out": "../output",
+    "disableSources": true,
+    "navigationLinks": {
+        "GitHub": "https://github.com/bergmannjg/types-hafas-client"
+    }
+}

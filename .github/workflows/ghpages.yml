@@ -1,4 +1,4 @@
-name: CI
+name: ghpages
 
 on:
   workflow_dispatch:
@@ -25,11 +25,16 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-      - name: build js docs
+      - name: build js docs with current version of @types/hafas-client
         run: |
-          cd ./typedoc
+          cd ./example
+          npx -y npm-check-updates -u
+          cd ../typedoc
+          VERSION=$(cat ../example/package.json | jq '.devDependencies."@types/hafas-client"' | sed 's/[\^\"]//g')
+          echo "version ${VERSION}"
           wget -O hafas-client.d.ts https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/hafas-client/index.d.ts
-          npx --yes typedoc --out ../output --name "Hafas Client Api" --disableSources hafas-client.d.ts
+          sed -i 's/VERSION/'"$VERSION"'/' typedoc.json
+          npx --yes typedoc hafas-client.d.ts
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
