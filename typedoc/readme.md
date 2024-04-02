@@ -1,4 +1,4 @@
-Documentation of the [hafas-client](https://github.com/public-transport/hafas-client) Api generated from the [@types/hafas-client](https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/hafas-client/index.d.ts) declaration file.
+Documentation of the [hafas-client](https://www.npmjs.com/package/hafas-client) Api generated from the [@types/hafas-client](https://www.npmjs.com/package/@types/hafas-client) declaration file.
 
 ## TypeScript Example
 
