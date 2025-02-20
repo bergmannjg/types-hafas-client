@@ -31,7 +31,7 @@ with type information via [JsDoc annotations](https://www.typescriptlang.org/doc
 
 ```js
 /**
- * @typedef {import("hafas-client").HafasClient} HafasClient
+ * @import {HafasClient} from "hafas-client"
  */
 import { createClient } from 'hafas-client';
 import { profile as dbProfile } from 'hafas-client/p/db/index.js';
