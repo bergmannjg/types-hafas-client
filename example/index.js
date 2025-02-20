@@ -1,5 +1,5 @@
 /**
- * @typedef {import("hafas-client").HafasClient} HafasClient
+ * @import {HafasClient} from "../typedoc/hafas-client"
  */
 import { createClient } from 'hafas-client';
 import { profile as dbProfile } from 'hafas-client/p/db/index.js';

@@ -10,7 +10,7 @@
     "hafas-client": "^6.3.0"
   },
   "devDependencies": {
-    "@types/hafas-client": "^6.2.0",
+    "@types/hafas-client": "^6.3.0",
     "@types/node": "^20.12.2"
   }
 }
